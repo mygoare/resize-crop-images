@@ -1,11 +1,16 @@
 <?php
 include_once("./lib/resize-class.php");
+/**
+ *
+ * Load Variables:
+ * $resize_to_width,
+ * $resize_to_height,
+ * $distDir,
+ * $srcDir
+ *
+ */
+include_once("./config.php");
 
-//variables config
-$resize_to_width = "190";
-$resize_to_height = "130";
-$srcDir = "/users/mygoare/Pictures/";
-$distDir = dirname(__FILE__)."/dist/";
 if (!is_dir($distDir)) {mkdir($distDir);}
 
 $files_arr = array();
