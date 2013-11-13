@@ -72,8 +72,13 @@ function recheckImageExtension($filePath) {
 }
 
 function debug() {
-var_dump ($files_arr);
-return false;
+  global $files_arr;
+  var_dump ($files_arr);
+  return false;
+}
+
+if ($argv[1] == "dev") {
+  debug();
 }
 
 if (!empty($files_arr)) {
