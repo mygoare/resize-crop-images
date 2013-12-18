@@ -2,7 +2,9 @@
 
 ###How to use
 
-1. 修改index.php 的几个变量
+0. `cp config.sample.php config.php`
+
+1. 修改config.php 的几个变量
 
     `$resize_to_width`
 
