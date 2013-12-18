@@ -38,7 +38,7 @@ function recursionDir($dir){
 }
 
 function checkImageExtension($filePath) {
-  $ex_arr = ['.jpg', '.gif', '.png'];
+  $ex_arr = array('.jpg', '.gif', '.png');
   $ex = strtolower(strrchr($filePath, '.'));
   if ($ex == ".jpeg") {
     $ex = ".jpg";
